@@ -8,4 +8,10 @@ Description: Geom for diplaying hurricane data. Must be overlayed into ggmap.
 License: MIT
 Encoding: UTF-8
 LazyData: true
+Suggests: readr,
+    dplyr,
+    gpplot2,
+    grid,
+    geosphere,
+    tidyr
 RoxygenNote: 6.0.1
