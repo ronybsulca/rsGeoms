@@ -13,6 +13,11 @@
 #' @importFrom dplyr filter
 #' @importFrom grid polygonGrob
 #' @importFrom grid gTree
+#' @importFrom ggplot2 ggproto
+#' @importFrom ggplot2 aes
+#' @importFrom ggplot2 draw_key_polygon
+#' @importFrom ggplot2 Geom
+#'
 #'
 #' @return This function returns a Data Frame object, with row names given based on the \code{row_names} argument.
 #'         It includes all the columns of the given dataset whose elements are all numeric or have
@@ -38,10 +43,10 @@
 #' @export
 #'
 
-GeomHurricane <- ggplot2::ggproto("GeomHurricane", Geom,
+GeomHurricane <- ggplot2::ggproto("GeomHurricane", ggplot2::Geom,
                                   required_aes = c("x", "y","r_ne", "r_se", "r_nw", "r_sw"),
-                                  default_aes = aes(scale_radii = 1, fill = 1, colour = 1),
-                                  draw_key = draw_key_polygon,
+                                  default_aes = ggplot2::aes(scale_radii = 1, fill = 1, colour = 1),
+                                  draw_key = ggplot2::draw_key_polygon,
                                   draw_panel = function(data, panel_scales, coord){
                                       print(data)
 
