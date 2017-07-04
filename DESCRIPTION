@@ -10,7 +10,7 @@ Encoding: UTF-8
 LazyData: true
 Suggests: readr,
     dplyr,
-    gpplot2,
+    ggplot2,
     grid,
     geosphere,
     tidyr
