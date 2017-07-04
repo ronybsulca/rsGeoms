@@ -8,7 +8,7 @@ Description: Geom for diplaying hurricane data. Must be overlayed into ggmap.
 License: MIT
 Encoding: UTF-8
 LazyData: true
-Suggests: readr,
+Imports: readr,
     dplyr,
     ggplot2,
     grid,
