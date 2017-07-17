@@ -28,7 +28,7 @@
 #' @examples
 #'
 #' \dontrun{
-#' ## Example of Creating a calling function with this Grob
+#' ## Example of Creating a calling function with this Grob.
 #' geom_hurricane <- function(mapping = NULL, data = NULL, stat = "identity",
 #'                            position = "identity", na.rm = FALSE,
 #'                            show.legend = NA, inherit.aes = TRUE, ...) {
