@@ -19,9 +19,6 @@
 #' @importFrom ggplot2 Geom
 #'
 #'
-#' @return This function returns a Data Frame object, with row names given based on the \code{row_names} argument.
-#'         It includes all the columns of the given dataset whose elements are all numeric or have
-#'         a meaningful numerical equivalent.
 #' @section Errors: \code{GeomHurricane} won't be able to display the Hurricane grobs if there isn't a current ggmap
 #'          active for which this Geom will be apllied onto.
 #'

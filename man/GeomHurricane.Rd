@@ -8,11 +8,6 @@
 \usage{
 GeomHurricane
 }
-\value{
-This function returns a Data Frame object, with row names given based on the \code{row_names} argument.
-        It includes all the columns of the given dataset whose elements are all numeric or have
-        a meaningful numerical equivalent.
-}
 \description{
 This Geom returns ggproto object made of a gTree of polygonGrobs. Each Grob is a circle with different radii in each circle depending on the quadrant.
 The grobs are colored based on the \code{colour} argument. There will be one grob per wind_speed, aka \code{colour} variable. This
@@ -26,7 +21,7 @@ is a ggproto object, and thus it requires no Arguments once Created (those are f
 \examples{
 
 \dontrun{
-## Example of Creating a calling function with this Grob
+## Example of Creating a calling function with this Grob.
 geom_hurricane <- function(mapping = NULL, data = NULL, stat = "identity",
                            position = "identity", na.rm = FALSE,
                            show.legend = NA, inherit.aes = TRUE, ...) {
